@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="./styles.css">
+        <title>Timer</title>
+    </head>
+
+    <body onload="IniciarReloj()">
+        <h1 id="h1_text">Apagado</h1>
+        <input type="number" id="input">
+        <button onclick="Timer()">Aceptar</button>
+        <audio controls id="audio">
+            <source src="./assets/alarma.mp3" type="audio/mpeg">
+            Sonido no disponible
+        </audio>
+
+        <h1 id="clock">Date</h1>
+
+        <script>
+            let input = document.getElementById("input");
+            let output = document.getElementById("h1_text");
+            let sound = document.getElementById("audio");
+            let clock = document.getElementById("clock");
+
+            function Timer(){
+                setTimeout(SaludarUsuario, 1000 * input.value)
+            }
+
+            function SaludarUsuario(){
+                sound.play();
+                output.textContent = "Encendido";
+                output.style.color = "green";
+            }
+
+            function IniciarReloj(){
+                setInterval(Reloj, 1000)
+            }
+
+            function Reloj(){
+                let tiempoActual = new Date();
+                let hora = String(tiempoActual.getHours()).padStart(2, "0");
+                let minutos = String(tiempoActual.getMinutes()).padStart(2, "0");
+                let segundos = String(tiempoActual.getSeconds()).padStart(2, "0");
+
+                clock.textContent = hora + ":" + minutos + ":" + segundos;
+            }
+        </script>
+    </body>
+</html>

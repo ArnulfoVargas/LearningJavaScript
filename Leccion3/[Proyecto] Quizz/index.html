@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body onload="StartTimer()">
+    
+    <h1 id = "timeLeft">00:30</h1>
+    
+    <p class="preguntas">Cual es el planeta con mas lunas?</p>
+    <input type="text" id="t1" class = "respuestas">
+
+    <p class="preguntas">Cuantos huesos tienes en el oido?</p>
+    <input type="text" id="t2" class = "respuestas">
+    
+    <p class="preguntas">Que pelicula de Disney tiene mas secuelas?</p>
+    <input type="text" id="t3" class = "respuestas">
+    
+    <p class="preguntas">Cuantos puntos tiene un dado?</p>
+    <input type="text" id="t4" class = "respuestas">
+    
+    <p class="preguntas">Cuantos corazones tiene un pulpo?</p>
+    <input type="text" id="t5" class = "respuestas">
+    <br>
+    
+    <button class="botones" id = "reiniciar" onclick="Reintentar()">Reiniciar</button>
+    <button class="botones" id = "aceptar" onclick="Aceptar()">Aceptar</button>
+    
+    <script src="./JavaScript/index.js"></script>
+</body>
+</html>

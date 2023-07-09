@@ -1,0 +1,103 @@
+body{
+    background-color: #F5F5F5;
+}
+button{
+    width: 100%;
+    height: 100%;
+}
+input{
+    background-color: #ECECEC;
+    border-radius: 10px;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+
+    font-size: 1rem;
+    font-weight: 700;
+
+    width: 100%;
+    height: 100%;
+}
+#pow{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#sqrt{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+#abs{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#rand{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.Body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.extras{
+    margin-top: 1rem;
+    height: 3rem;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: .5rem;
+}
+.extras > *{
+    flex-basis: 33%;
+    height: 100%;
+}
+.extras > * > button{
+    width: 100%;
+    height: 100%;
+    background-color: #27B1BE;
+    border: none;
+    border-radius: 10px;
+}
+.extras > * > button:hover{
+    width: 100%;
+    height: 100%;
+    background-color: #1e95a0;
+    border: none;
+    border-radius: 10px;
+}
+.buttons{
+    width: 25%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-top: 1rem;
+    gap: .5rem;
+}
+.buttons > * > button{
+    height: 3rem;
+    background-color: #FACC2E;
+    border: none;
+    border-radius: 10px;
+}
+.buttons > * > button:hover{
+    height: 3rem;
+    background-color: #c99a00;
+}
+.Result{
+    margin-top: 1rem;
+    width: 25%;
+    height: 3rem;
+}
+.numbers{
+    height: 3rem;
+    width: 25%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .5rem;
+}
+.input-field{
+    text-align: right;
+}
