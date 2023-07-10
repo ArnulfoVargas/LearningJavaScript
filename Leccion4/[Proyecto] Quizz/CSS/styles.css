@@ -4,6 +4,9 @@ body{
 button{
     width: 100%;
     height: 100%;
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    color: #F5F5F5;
 }
 input{
     background-color: #ECECEC;
@@ -54,19 +57,19 @@ input{
     flex-basis: 33%;
     height: 100%;
 }
-.extras > * > button{
+.extras > button{
     width: 100%;
     height: 100%;
     background-color: #27B1BE;
     border: none;
     border-radius: 10px;
 }
-.extras > * > button:hover{
-    width: 100%;
-    height: 100%;
+.extras > button:hover{
     background-color: #1e95a0;
-    border: none;
-    border-radius: 10px;
+}
+.extras > button:active{
+    background-color: #177b85;
+    border: .15rem solid #10676f;
 }
 .buttons{
     width: 25%;
@@ -76,16 +79,20 @@ input{
     margin-top: 1rem;
     gap: .5rem;
 }
-.buttons > * > button{
+.buttons > button{
     height: 3rem;
     background-color: #FACC2E;
     border: none;
     border-radius: 10px;
 }
-.buttons > * > button:hover{
-    height: 3rem;
-    background-color: #c99a00;
+.buttons > button:hover{
+    background-color: #e1ac00;
 }
+.buttons > button:active{
+    background-color: #c09300;
+    border: .15rem solid #9d7800;
+}
+
 .Result{
     margin-top: 1rem;
     width: 25%;
