@@ -12,35 +12,38 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="./CSS/styles.css">
+    
 </head>
 <body>
     <div class="Body">
         <div class="numbers">
-            <input class="input-field" step="any" type="number" id="first-number" value="0">
-            <input class="input-field" step="any" type="number" id="second-number" value="0">
+            <input class="input-field" step="any" type="number" id="first-number" value="0" onemptied="Validate('first-number')">
+            <input class="input-field" step="any" type="number" id="second-number" value="0" onchange="Validate('second-number')">
         </div>
 
         <div class="buttons">
-            <button id="add">+</button>
-            <button id="less">-</button>
-            <button id="multiply">x</button>
-            <button id="divide">/</button>
+            <button id="add" onclick="Add()">+</button>
+            <button id="less" onclick="Less()">-</button>
+            <button id="multiply" onclick="Multiply()">x</button>
+            <button id="divide" onclick="Divide()">/</button>
 
-            <button id="pow">Pow</button>
-            <button id="sqrt">Root</button>
-            <button id="abs">Abs</button>
-            <button id="rand">Random</button>
+            <button id="pow" onclick="Pow()">Pow</button>
+            <button id="sqrt" onclick="Sqrt()">Root</button>
+            <button id="abs" onclick="Abs()">Abs</button>
+            <button id="rand" onclick="Random()">Random</button>
         </div>
 
         <div class="Result">
-            <input type="number" readonly>
+            <input type="number" id="result" readonly>
         </div>
 
         <div class="extras">
-            <button id="round">Round</button>
-            <button id="ceil">Floor</button>
-            <button id="floor">Ceil</button>
+            <button id="round" onclick="Round()">Round</button>
+            <button id="floor" onclick="Floor()">Floor</button>
+            <button id="ceil" onclick="Ceil()">Ceil</button>
         </div>
     </div>
+
+    <script src="./JS/index.js"></script>
 </body>
 </html>

@@ -20,6 +20,12 @@ input{
 
     width: 100%;
     height: 100%;
+
+    font-family: 'Righteous', cursive;
+    font-size: 2rem;
+    font-weight: lighter;
+    color: #497174;
+    text-align: right;
 }
 #pow{
     grid-column-start: 1;
