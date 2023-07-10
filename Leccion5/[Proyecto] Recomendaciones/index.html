@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendaciones</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Caprasimo&display=swap" rel="stylesheet">
+</head>
+<body onload="hideRecomendations()">
+    <h1>Recomendador de Entretenimiento</h1>
+    <p>Ingresa tu edad y genero favorito para recibir una recomendacion</p>
+
+    <div class="selection">
+        <h2>Edad:</h2>
+        <input type="number" onchange="validate()" id="input" value="0">
+
+        <button onclick="genderSelect(0)">Comedia</button>
+        <button onclick="genderSelect(1)">Terror</button>
+        <button onclick="genderSelect(2)">Super heroes</button>
+        <button onclick="genderSelect(3)">Romance</button>
+    </div>
+
+    <div id="recomendaciones">
+        <div>
+            <h2>Te recomendamos:</h2>
+            <img src="" id = "image">
+            <h3 id="movie-title"></h3>
+        </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>
