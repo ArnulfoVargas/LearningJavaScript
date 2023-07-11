@@ -14,13 +14,6 @@ function validate(){
     if (value == ""){
         value = "0";
     }
-    else if (+value < 0){
-        value = "0";
-    }
-    else if (+value > 80){
-        value = 80;
-    }
-
     age = value;
     inputField.value = value;
 }
