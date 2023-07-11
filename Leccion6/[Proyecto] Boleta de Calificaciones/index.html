@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calificaciones</title>
+
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body onload="init()">
+    <div id="page-disposition">
+        <div id="personal-data">
+            <img id="alumn-image" src="https://i1.sndcdn.com/avatars-xTn7g3zaC84sIgRY-E68SrA-t240x240.jpg" alt="A kid">
+
+            <p class="field">Name:</p>
+            <p class="field-value">Ramon</p>
+
+            <p class="field">Last Name:</p>
+            <p class="field-value">Gonzalez</p>
+
+            <p class="field">Age:</p>
+            <p class="field-value">15</p>
+
+            <p class="field">ID:</p>
+            <p class="field-value">1234567</p>
+        </div>
+
+        <div id="buttons-grid">
+            <button class="button" onclick="mostrarNotas()">Mostrar notas</button>
+            <button class="button" onclick="promedio()">Promedio</button>
+            <button class="button" onclick="mejorCalificacion()">Nota mas alta</button>
+            <button class="button" onclick="reprobo()">Reprobo?</button>
+        </div>
+
+        <div id="results">
+            <table id="table">
+                <thead><tr>
+                    <td id="head">Calificaciones</td>
+                </tr></thead>
+                <tbody>
+                    <tr id="table-childs">
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./JS/index.js"></script>
+</body>
+</html>

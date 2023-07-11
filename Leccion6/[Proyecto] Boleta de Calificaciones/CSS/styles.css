@@ -1,0 +1,84 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #F5F5F5;
+
+}
+#head{
+    text-align: center;
+    font-weight: bold;
+    color: #3F2305;
+    margin-left: auto;
+    margin-right: auto;
+}
+#personal-data{
+    width: fit-content;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+#page-disposition{
+    display: grid;
+    width: 95%;
+    height: 95%;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr;
+}
+#alumn-image{
+    grid-row: 1 / span 4;
+    border-radius: 100%;
+}
+#buttons-grid{
+    grid-row: 2;
+    display: flex;
+    margin-top: auto;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#results{
+    grid-row: 1 / span 2;
+}
+.data{
+    color: #3F2305;
+}
+.tr-Mat{
+    width: 10rem;
+    height: 2rem;
+    font-weight: bold;
+}
+.notas{
+    text-align: left;
+    margin-left: auto;
+}
+.button{
+    width: 8rem;
+    height: 2rem;
+    background-color: #F2EAD3;
+    border: none;
+    border-radius: 5px;
+
+    font-weight: bold;
+    color: #3F2305;
+}
+.button:hover{
+    width: 8rem;
+    height: 2rem;
+    background-color: #DFD7BF;
+    border: none;
+
+    font-weight: bold;
+    color: #3F2305;
+}
+
+.field, .field-value{
+    margin-top: auto;
+    color: #3F2305;
+}
+.field{
+    text-align: left;
+    font-weight: bold;
+}
+.field-value{
+    text-align: left;
+}
